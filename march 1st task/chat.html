@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5%;
+        }
+  section{
+    border: 2px solid gray;
+    height: 70vh;
+    width: 30%;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    overflow-y: scroll;
+    background-image: url('./wa\ pic.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+.chat{
+border: 2px solid gray;
+height: 5vh;
+width: 30%;
+display: block;
+border-radius: 15px;
+text-align: center;
+padding-top: 10px ;
+
+}
+.chat:nth-child(even){
+    position: sticky;
+    left: 67%;
+    background-color: var(--x);
+
+
+}
+.chat:nth-child(odd){
+    position: sticky;
+    left: 2%;
+    background-color: var(--y);
+   }
+  :root{
+    --x:rgb(116, 247, 116);
+    --y:aqua;
+
+  }
+  .input{
+    display: block;
+    border: 2px solid gray;
+    height: 45px;
+    width: 30%;  
+    position: fixed;
+    top: 81%;
+    background-color: black;
+  }
+  input{
+    border: 2px solid gray;
+height: 5vh;
+width: 73%;  
+margin-left: 3%;
+margin-top: 4px;
+  }
+  button{
+    height: 6vh;
+    width: 75px;
+  }
+
+    </style>
+</head>
+<body>
+   <section>
+   <p class="chat">
+    hi
+   </p>
+   <p class="chat">
+    hello
+   </p>
+   <p class="chat">
+    how are you
+   </p>
+   <p class="chat b4">
+    i am good what about you?
+   </p>
+   <p class="chat b5">
+    yeah fine
+   </p>
+   <p class="chat b6">
+    had ur lunch?
+   </p>
+   <p class="chat b7">
+    yess
+   </p>
+   <p class="chat b8">
+    have a nice day?
+</p>
+   <p class="chat b9">
+    likewise
+</p>
+   <p class="chat b10">
+    bye
+</p>
+
+   </section> 
+
+   <div class="input">
+    <input type="text" placeholder="enter text here">
+    <button>
+        Send
+    </button>
+   </div>
+   
+</body>
+</html>
